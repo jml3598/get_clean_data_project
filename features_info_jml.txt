@@ -1,0 +1,43 @@
+Feature Selection 
+=================
+
+The features selected for this database come from the Accelelerometer and gyroscope 3-axial raw signals tAccel-XYZ and tGyro-XYZ. These time domain signals (prefix 'Time' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the Acceleleration signal was then separated into body and gravity Acceleleration signals (TimeBodyAccel-XYZ and TimeGravityAccel-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear Acceleleration and angular velocity were derived in time to obtain Jerk signals (TimeBodyAccelJerk-XYZ and TimeBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TimeBodyAccelMag, TimeGravityAccelMag, TimeBodyAccelJerkMag, TimeBodyGyroMag, TimeBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FreqBodyAccel-XYZ, FreqBodyAccelJerk-XYZ, FreqBodyGyro-XYZ, FreqBodyAccelJerkMag, FreqBodyGyroMag, FreqBodyGyroJerkMag. (Note the 'Freq' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+TimeBodyAccel-XYZ
+TimeGravityAccel-XYZ
+TimeBodyAccelJerk-XYZ
+TimeBodyGyro-XYZ
+TimeBodyGyroJerk-XYZ
+TimeBodyAccelMag
+TimeGravityAccelMag
+TimeBodyAccelJerkMag
+TimeBodyGyroMag
+TimeBodyGyroJerkMag
+FreqBodyAccel-XYZ
+FreqBodyAccelJerk-XYZ
+FreqBodyGyro-XYZ
+FreqBodyAccelMag
+FreqBodyAccelJerkMag
+FreqBodyGyroMag
+FreqBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+Mean: Mean value
+StdDev(): Standard deviation
+MeanFreq(): Weighted average of the frequency components to obtain a mean frequency
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+GravityMean
+TimeBodyAccelMean
+TimeBodyAccelJerkMean
+TimeBodyGyroMean
+TimeBodyGyroJerkMean
